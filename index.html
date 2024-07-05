@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>WEATHER FORECAST</title>
+    <link rel="stylesheet" href="weather.css">
+  </head>
+  <body>
+    <div class="header">
+      <h1>WEATHER FORECAST</h1>
+      <div>
+        <style>
+          #input {
+            position: relative;
+          }
+          #citySelect {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            z-index: 1000;
+            display: none;
+            width: 100%;
+            border: 1px solid #ccc;
+            background-color: #fff;
+          }
+          #citySelect.active {
+            display: block;
+          }
+          #citySelect option {
+            padding: 5px;
+          }
+        </style>
+       <input type="text" id="input" placeholder="Enter city name..">
+        <button id="search">Search</button>
+        <datalist id="cities"></datalist>
+      </div>
+    </div>
+    <main>
+      <div class="weather">
+        <h2 id="city">Pune, IN</h2>
+        <div class="temp-box">
+          <img src="sun.png" alt="Weather Icon">
+          <p class="temperature">29°C</p>
+        </div>
+        
+      </div>
+      <div class="divider1"></div>
+      <div class="forecastH">
+        <p class="cast-header">Upcoming Forecast</p>
+        <div class="templist">
+          <div class="next">
+            <div>
+              <p class="time">8:30 PM</p>
+              <p>24 °C / 25 °C</p>
+              </div>
+              <p class="desc">Light Cloudy</p>
+          </div>
+
+          <div class="next">
+            <div>
+              <p class="time">9:30 PM</p>
+              <p>26 °C / 27 °C</p>
+              </div>
+              <p class="desc">Overcast Clouds</p>
+          </div>
+
+          <div class="next">
+            <div>
+              <p class="time">10:30 PM</p>
+              <p>26 °C / 27 °C</p>
+              </div>
+              <p class="desc">Light Cloudy</p>
+          </div>
+
+          <div class="next">
+            <div>
+              <p class="time">11:30 PM</p>
+              <p>25 °C / 26 °C</p>
+              </div>
+              <p class="desc">Light Cloudy</p>
+          </div>
+
+          <div class="next">
+            <div>
+              <p class="time">8:30 PM</p>
+              <p>29 °C / 27 °C</p>
+              </div>
+              <p class="desc">Light Cloudy</p>
+          </div>
+
+          <div class="next">
+            <div>
+              <p class="time">8:30 PM</p>
+              <p>29 °C / 27 °C</p>
+              </div>
+              <p class="desc">Light Cloudy</p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="forecastD">
+      <div class="divider2"></div>
+      <p class="cast-header">Forecast of next 4 Days</p>
+      <div class="weekF">
+        <div class="dayF">
+          <p class="date">Sun Jun 15 2024</p>
+          <p>25 °C / 26 °C </p>
+          <p class="desc">Overcast Clouds</p>
+        </div>
+
+        <div class="dayF">
+          <p class="date">Mon Jun 16 2024</p>
+          <p>31 °C / 29 °C </p>
+          <p class="desc">Rain</p>
+        </div>
+
+        <div class="dayF">
+          <p class="date">Tue Jun 17 2024</p>
+          <p>31 °C / 25 °C </p>
+          <p class="desc">Overcast Clouds</p>
+        </div>
+
+        <div class="dayF">
+          <p class="date">Wed  Jun 18 2024</p>
+          <p>31 °C / 26 °C </p>
+          <p class="desc">Scattered Thunderstorms</p>
+        </div>
+      </div>
+    </div>
+    <script src="weather.js"></script>
+  </body>
+</html>
